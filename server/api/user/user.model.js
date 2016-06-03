@@ -4,6 +4,7 @@ import crypto from 'crypto';
 import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');
 import {Schema} from 'mongoose';
+import CartItem from '../cart/cartitem.model';
 
 var UserSchema = new Schema({
   name: String,
@@ -21,7 +22,8 @@ var UserSchema = new Schema({
     required: true
   },
   provider: String,
-  salt: String
+  salt: String,
+  cart: [CartItem.schema]
 });
 
 /**
