@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module('heatherArtShopApp', [
-                 'heatherArtShopApp.auth',
-                 'heatherArtShopApp.admin',
-                 'heatherArtShopApp.constants',
+angular.module('project4App', [
+                 'project4App.auth',
+                 'project4App.admin',
+                 'project4App.constants',
                  'ngCookies',
                  'ngResource',
                  'ngSanitize',
