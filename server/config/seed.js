@@ -6,6 +6,7 @@
 'use strict';
 import Thing from '../api/thing/thing.model';
 import User from '../api/user/user.model';
+import Item from '../api/item/item.model';   // add this near the top of the file
 
 Thing.find({}).remove()
   .then(() => {
@@ -57,3 +58,190 @@ User.find({}).remove()
       console.log('finished populating users');
     });
   });
+
+
+  // add the following at the bottom of the file
+Item.find({}).remove()
+.then(() => {
+  return Item.create(
+    {
+      title: 'Arc de Triumph',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Arc de Triumph in Paris, France. 8x10 in.',
+      imageFile: 'art/arc_de_triumph.jpg'
+    },
+    {
+      title: 'China River',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'River in China. 8x10 in.',
+      imageFile: 'art/china_river_2.jpg'
+    },
+    {
+      title: 'China River',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'River in China. 8x10 in.',
+      imageFile: 'art/china_river.jpg'
+    },
+    {
+      title: 'Bastille Day',
+      category: 'photography',
+      price: 30.00,
+      qty: 100,
+      description: 'Bastille Day in Paris, France 8x10 in.',
+      imageFile: 'art/eiffel_4.jpg'
+    },
+    {
+      title: 'Bastille Day',
+      category: 'photography',
+      price: 30.00,
+      qty: 100,
+      description: 'Bastille Day in Paris, France 8x10 in.',
+      imageFile: 'art/eiffel_5.jpg'
+    },
+    {
+      title: 'Bastille Day',
+      category: 'photography',
+      price: 30.00,
+      qty: 100,
+      description: 'Bastille Day in Paris, France 8x10 in.',
+      imageFile: 'art/eiffel_6.jpg'
+    },
+    {
+      title: 'Bastille Day',
+      category: 'photography',
+      price: 30.00,
+      qty: 100,
+      description: 'Bastille Day in Paris, France 8x10 in.',
+      imageFile: 'art/eiffel_7.jpg'
+    },
+    {
+      title: 'Eiffel Tower',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Eiffel Tower in Paris, France 8x10 in.',
+      imageFile: 'art/eiffel_bw_5.jpg'
+    },
+    {
+      title: 'Eiffel Tower',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Eiffel Tower in Paris, France 8x10 in.',
+      imageFile: 'art/eiffel_bw_1.jpg'
+    },
+    {
+      title: 'Eiffel Tower',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Eiffel Tower in Paris, France 8x10 in.',
+      imageFile: 'art/eiffel_2.jpg'
+    },
+    {
+      title: 'Eiffel Tower',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Eiffel Tower in Paris, France 8x10 in.',
+      imageFile: 'art/eiffel_3.jpg'
+    },
+    {
+      title: 'Eiffel Tower',
+      category: 'photography',
+      price: 20.00,
+      qty: 100,
+      description: 'Eiffel Tower in Paris, France 8x10 in.',
+      imageFile: 'art/eiffel_8.jpg'
+    },
+    {
+      title: 'Giraffe',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Giraffe 8x10 in.',
+      imageFile: 'art/giraffe.jpg'
+    },
+    {
+      title: 'Great Wall of China',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Geat Wall of China 8x10 in.',
+      imageFile: 'art/great_wall_1.jpg'
+    },
+    {
+      title: 'Great Wall of China',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Geat Wall of China 8x10 in.',
+      imageFile: 'art/great_wall_2.jpg'
+    },
+    {
+      title: 'Great Wall of China',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Geat Wall of China 8x10 in.',
+      imageFile: 'art/great_wall_3.jpg'
+    },
+    {
+      title: 'Great Wall of China',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Geat Wall of China 8x10 in.',
+      imageFile: 'art/great_wall_4.jpg'
+    },
+    {
+      title: 'Great Wall of China',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Geat Wall of China 8x10 in.',
+      imageFile: 'art/great_wall_5.jpg'
+    },
+    {
+      title: 'Great Wall of China',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Geat Wall of China 8x10 in.',
+      imageFile: 'art/great_wall_6.jpg'
+    },
+    {
+      title: 'Great Wall of China',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Geat Wall of China 8x10 in.',
+      imageFile: 'art/great_wall_7.jpg'
+    },
+    {
+      title: 'Kangaroo',
+      category: 'photography',
+      price: 15.00,
+      qty: 100,
+      description: 'Kangaroo 8x10 in.',
+      imageFile: 'art/kangaroo.jpg'
+    }
+  )
+})
+.then(() => {
+  return Item.find({});
+})
+.then((items) => {
+  console.log('Finished populating ' + items.length + ' items.');
+})
+.catch((err) => {
+  console.log('ERROR:', err);
+});
+
+
