@@ -69,7 +69,7 @@ Item.find({}).remove()
       category: 'photography',
       price: 15.00,
       qty: 100,
-      description: 'Arc de Triumph in Paris, France. 8x10 in.',
+      description: 'Paris, France. 8x10 in.',
       imageFile: 'art/arc_de_triumph.jpg'
     },
     {
@@ -191,14 +191,6 @@ Item.find({}).remove()
       qty: 100,
       description: 'Geat Wall of China 8x10 in.',
       imageFile: 'art/great_wall_3.jpg'
-    },
-    {
-      title: 'Great Wall of China',
-      category: 'photography',
-      price: 15.00,
-      qty: 100,
-      description: 'Geat Wall of China 8x10 in.',
-      imageFile: 'art/great_wall_4.jpg'
     },
     {
       title: 'Great Wall of China',
