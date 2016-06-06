@@ -1,27 +1,112 @@
-.thing-form {
-  margin: 20px 0;
+@keyframes layer2Anim {
+    0%{opacity:0;}
+    17%{opacity:0;}
+    33%{opacity:1;}
+    50%{opacity:1;}
+    67%{opacity:0;}
+    100%{opacity:0;}
+}
+@keyframes layer3Anim {
+    0%{opacity:0;}
+    50%{opacity:0;}
+    67%{opacity:1;}
+    83%{opacity:1;}
+    100%{opacity:0;}
 }
 
-#banner {
-  border-bottom: none;
-  margin-top: -20px;
+.slideShow {
+    position: relative;
+}
+.placeHolder {
+    width: 1273px;
+    height: 550px;
+    visibility: hidden;
+}
+.layer1, .layer2, .layer3, .layer4 {
+    position: absolute;
+    width: 1273px;
+    height: 550px;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.layer1 {
+    background-image: url(/assets/images/art/slider.jpg);
+}
+.layer2 {
+    background-image: url(/assets/images/art/sea_otter.jpg);
+    animation: layer2Anim 10s infinite;
+}
+.layer3 {
+    background-image: url(/assets/images/art/monmartre.jpg);
+    animation: layer3Anim 10s infinite;
 }
 
-#banner h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
+/*.slideOverlay {
+    background-image: url(slideshow/overlay.png);
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
-
-.hero-unit {
-  position: relative;
-  padding: 30px 15px;
-  color: #F5F5F5;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background: #4393B9;
-}
+.slideOverlay p {
+    position: relative;
+    font-size: 3vw;
+    color: #fff;
+    text-shadow: 3px 3px 6px #000;
+    text-align: right;
+    top: 70%;
+}*/
 
 .navbar-text {
   margin-left: 15px;
 }
+
+.ng-scope {
+  padding-top: 0px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+  background-color: #444444;
+  border-color: #444444;
+}
+
+.footer {
+  background-color: #444444;
+}
+
+body .ng-scope {
+  /*background-color: black;*/
+  margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #444444;
+  background-color: white;
+}
+
+.navbar-brand {
+  color: #444444;
+}
+
+body {
+  padding-bottom: 0px;
+}
+
+.ng-scope .ng-isolate-scope {
+  height: 475px;
+  /*background-color: #000000;*/
+}
+
+
