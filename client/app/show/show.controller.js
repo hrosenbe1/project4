@@ -4,20 +4,20 @@
 
 class ShowCtrl {
 
-  constructor($http, $stateParams, CartService) {
+  constructor($http, $stateParams, cartService) {
     var vm = this;
     var id = $stateParams.id;
 
     vm.price = 0;
-    vm.product = {};
+    vm.item = {};
 
-    vm.isInCart = CartService.isInCart;
+    vm.isInCart = cartService.isInCart;
 
     function emptyCart() {
       return {
         count: 1,
         attributes: [],
-        product: {}
+        item: {}
       };
     }
     vm.cart = emptyCart();
@@ -36,7 +36,7 @@ class ShowCtrl {
       if (vm.selected) {
         vm.cart.item = vm.item;
         vm.cart.attributes.push(vm.selected);
-        CartService.addItem(vm.cart);
+        cartService.addItem(vm.cart);
         vm.cart = emptyCart();
       }
     };
