@@ -110,16 +110,11 @@ img {
     }
 
 img:hover {
-    z-index:100px;
-    transform: scale(2.1);
-    position :absolute;
     border: 3px black solid;
-
 }
 
-a .list-group-item {
-  background-color: white;
-  padding: 50px;
+a.list-group-item {
+  background-color: transparent;
 }
 
 a.list-group-item:hover,

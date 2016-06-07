@@ -30,7 +30,7 @@
           <h3>{{ item.name }}</h3>
           <article class="row">
             <div class="col-xs-5">
-              <img class="middle" ng-src="/assets/images/{{item.imageFile}}"/>
+              <a ui-sref="show({id: item._id})"><img class="middle" ng-src="/assets/images/{{item.imageFile}}"/></a>
             </div>
             <div class="col-xs-7">
               <dl class="dl-horizontal">

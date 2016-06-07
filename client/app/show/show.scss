@@ -1,0 +1,27 @@
+.detail {
+  input[type='submit'] {
+    font-size: .9em;
+    width: 50%;
+    &.warning {
+      width: 55%;
+    }
+    &.checkout {
+      width: 45%;
+    }
+  }
+
+  img {
+
+    height: 300px;
+  }
+
+
+  article:last-child {
+
+    margin-top: 10px;
+  }
+
+  .quantitybutton {
+    float: left;
+  }
+}

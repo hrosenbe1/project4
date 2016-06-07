@@ -1,0 +1,41 @@
+<section class="detail">
+  <header>
+    <h1> Product Detail</h1>
+  <div class="panel">
+    <p> {{ ctrl.item.name }} </p>
+
+    <div class="col-md-4 item-image">
+    <img class="middle" src="/client/assets/images/art/{{ctrl.item.imageFile}}"/>
+    </div>
+    <article>
+      <table>
+        <tr>
+
+          <td> Category </td>
+          <td> {{vm.item.category}} </td>
+        <tr>
+          <td> Quantity </td>
+          <td class="quantitybutton"></td>
+              <button class="decrease" ng-click="vm.decrease()">
+                <span class="icon-minus">
+              <!-- input(ng-model="vm.cart.count" type='number')
+              button.increase(ng-click="vm.increase()")
+                span.icon-plus
+        tr(ng-repeat="customattribute in vm.product.attribute")
+          td {{customattribute.name}}
+          td
+            select(ng-options="attributevalue as attributevalue.value for attributevalue in customattribute.values track by attributevalue._id" ng-model="vm.selected")
+              option(value="" disabled) Select One
+    article.footer
+      ul
+        li Price
+        li {{(vm.price + vm.selected.price) * vm.cart.count | currency}}
+      form(ng-submit="vm.addCart()" ng-show="!vm.isInCart(vm.product)")
+        input.addCart(type="submit" value="Add To Cart")
+      form(ng-submit="vm.removeFromCart()" ng-show="vm.isInCart(vm.product)")
+        input.warning(type="submit" value="Remove from Cart")
+        input.checkout(type="submit" value="Checkout?")
+    article
+      p Description
+      br
+      p {{vm.product.description}} -->
