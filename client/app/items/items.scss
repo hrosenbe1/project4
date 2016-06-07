@@ -99,3 +99,41 @@ $animation-duration: 0.25s;
 .search {
   text-align: center;
 }
+
+img {
+  /*overflow: visible;*/
+    height: 250px;
+    width: 250px;
+        border: none;
+        box-shadow: 0 1px 7px rgba(0,0,0,0.6);
+        -o-transform: scale(1,1); -ms-transform: scale(1,1); -moz-transform: scale(1,1); -webkit-transform: scale(1,1); transform: scale(1,1); -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;
+    }
+
+img:hover {
+    z-index:100px;
+    transform: scale(2.1);
+    position :absolute;
+    border: 3px black solid;
+
+}
+
+a .list-group-item {
+  background-color: white;
+  padding: 50px;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+  background-color: transparent;
+}
+
+a.list-group-item:hover{
+  color: transparent;
+}
+
+
+section.container {
+  background-color: white;
+  margin-bottom: 0px;
+}
+

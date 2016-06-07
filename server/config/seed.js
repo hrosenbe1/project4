@@ -61,179 +61,91 @@ User.find({}).remove()
 
 
   // add the following at the bottom of the file
-// Item.find({}).remove()
-// .then(() => {
-//   return Item.create(
-//     {
-//       title: 'Arc de Triumph',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Paris, France. 8x10 in.',
-//       imageFile: 'art/arc_de_triumph.jpg'
-//     },
-//     {
-//       title: 'China River',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'River in China. 8x10 in.',
-//       imageFile: 'art/china_river_2.jpg'
-//     },
-//     {
-//       title: 'China River',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'River in China. 8x10 in.',
-//       imageFile: 'art/china_river.jpg'
-//     },
-//     {
-//       title: 'Bastille Day',
-//       category: 'photography',
-//       price: 30.00,
-//       qty: 100,
-//       description: 'Bastille Day in Paris, France 8x10 in.',
-//       imageFile: 'art/eiffel_4.jpg'
-//     },
-//     {
-//       title: 'Bastille Day',
-//       category: 'photography',
-//       price: 30.00,
-//       qty: 100,
-//       description: 'Bastille Day in Paris, France 8x10 in.',
-//       imageFile: 'art/eiffel_5.jpg'
-//     },
-//     {
-//       title: 'Bastille Day',
-//       category: 'photography',
-//       price: 30.00,
-//       qty: 100,
-//       description: 'Bastille Day in Paris, France 8x10 in.',
-//       imageFile: 'art/eiffel_6.jpg'
-//     },
-//     {
-//       title: 'Bastille Day',
-//       category: 'photography',
-//       price: 30.00,
-//       qty: 100,
-//       description: 'Bastille Day in Paris, France 8x10 in.',
-//       imageFile: 'art/eiffel_7.jpg'
-//     },
-//     {
-//       title: 'Eiffel Tower',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Eiffel Tower in Paris, France 8x10 in.',
-//       imageFile: 'art/eiffel_bw_5.jpg'
-//     },
-//     {
-//       title: 'Eiffel Tower',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Eiffel Tower in Paris, France 8x10 in.',
-//       imageFile: 'art/eiffel_bw_1.jpg'
-//     },
-//     {
-//       title: 'Eiffel Tower',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Eiffel Tower in Paris, France 8x10 in.',
-//       imageFile: 'art/eiffel_2.jpg'
-//     },
-//     {
-//       title: 'Eiffel Tower',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Eiffel Tower in Paris, France 8x10 in.',
-//       imageFile: 'art/eiffel_3.jpg'
-//     },
-//     {
-//       title: 'Eiffel Tower',
-//       category: 'photography',
-//       price: 20.00,
-//       qty: 100,
-//       description: 'Eiffel Tower in Paris, France 8x10 in.',
-//       imageFile: 'art/eiffel_8.jpg'
-//     },
-//     {
-//       title: 'Giraffe',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Giraffe 8x10 in.',
-//       imageFile: 'art/giraffe.jpg'
-//     },
-//     {
-//       title: 'Great Wall of China',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Geat Wall of China 8x10 in.',
-//       imageFile: 'art/great_wall_1.jpg'
-//     },
-//     {
-//       title: 'Great Wall of China',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Geat Wall of China 8x10 in.',
-//       imageFile: 'art/great_wall_2.jpg'
-//     },
-//     {
-//       title: 'Great Wall of China',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Geat Wall of China 8x10 in.',
-//       imageFile: 'art/great_wall_3.jpg'
-//     },
-//     {
-//       title: 'Great Wall of China',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Geat Wall of China 8x10 in.',
-//       imageFile: 'art/great_wall_5.jpg'
-//     },
-//     {
-//       title: 'Great Wall of China',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Geat Wall of China 8x10 in.',
-//       imageFile: 'art/great_wall_6.jpg'
-//     },
-//     {
-//       title: 'Great Wall of China',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Geat Wall of China 8x10 in.',
-//       imageFile: 'art/great_wall_7.jpg'
-//     },
-//     {
-//       title: 'Kangaroo',
-//       category: 'photography',
-//       price: 15.00,
-//       qty: 100,
-//       description: 'Kangaroo 8x10 in.',
-//       imageFile: 'art/kangaroo.jpg'
-//     }
-//  )
-//})
-// .then(() => {
-//   return Item.find({});
-// })
-// .then((items) => {
-//   console.log('Finished populating ' + items.length + ' items.');
-// })
-// .catch((err) => {
-//   console.log('ERROR:', err);
-// });
+Item.find({}).remove()
+.then(() => {
+  return Item.create(
+    {
+      title: 'Arc de Triumph',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Paris, France. 11x14 in.',
+      imageFile: 'art/arc_de_triumph_2.jpg'
+    },
+    {
+      title: 'Bastille Day',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Bastille Day in Paris, France 11x14 in.',
+      imageFile: 'art/bastille_day_1.jpg'
+    },
+    {
+      title: 'Saint Chapelle',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Saint Chapelle 11x14 in.',
+      imageFile: 'art/saint_chapelle_2.jpg'
+    },
+    {
+      title: 'Luxembourg Gardens',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Luxembourg Gardens Paris, France 11x14 in.',
+      imageFile: 'art/luxembourg_gardens.jpg'
+    },
+    {
+      title: 'Bastille Day',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Bastille Day Paris, France 8x10 in.',
+      imageFile: 'art/bastille_day_2.jpg'
+    },
+    {
+      title: 'Eiffel Tower',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Eiffel Tower, Paris, France 11x14 in.',
+      imageFile: 'art/eiffel_tower_close.jpg'
+    },
+    {
+      title: 'Turtle',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Turtle 11x14 in.',
+      imageFile: 'art/turtle.jpg'
+    },
+    {
+      title: 'Montmartre',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Monmartre 11x14 in.',
+      imageFile: 'art/montmartre.jpg'
+    },
+    {
+      title: 'China River',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'River in China. 11x14 in.',
+      imageFile: 'art/beijing_china_lake.jpg'
+    }
+ )
+})
+.then(() => {
+  return Item.find({});
+})
+.then((items) => {
+  console.log('Finished populating ' + items.length + ' items.');
+})
+.catch((err) => {
+  console.log('ERROR:', err);
+});
 
 
