@@ -1,8 +1,6 @@
 .cart {
-
-    float: right;
     padding: 10px;
-    margin-top: 0px;
+    margin-top: 5px;
     ul {
         list-style-type: none;
     }
@@ -159,5 +157,17 @@ section.container {
 }
 
 .row {
-  margin-right: 60px;
+margin-left: 5px;
+}
+
+.btn-danger {
+  border-radius: 50px;
+  color: white;
+  background-color: gray;
+  border-color: gray;
+  outline: none;
+}
+
+.ng-binding  {
+  font-size: 16px;
 }

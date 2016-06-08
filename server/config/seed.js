@@ -77,7 +77,7 @@ Item.find({}).remove()
       category: 'photography',
       price: 35.00,
       qty: 100,
-      description: 'Bastille Day in Paris, France 11x14 in.',
+      description: 'Bastille Day 11x14 in.',
       imageFile: 'art/bastille_day_1.jpg'
     },
     {
@@ -93,7 +93,7 @@ Item.find({}).remove()
       category: 'photography',
       price: 35.00,
       qty: 100,
-      description: 'Luxembourg Gardens Paris, France 11x14 in.',
+      description: 'Luxembourg Gardens 11x14 in.',
       imageFile: 'art/luxembourg_gardens.jpg'
     },
     {
@@ -101,7 +101,7 @@ Item.find({}).remove()
       category: 'photography',
       price: 35.00,
       qty: 100,
-      description: 'Bastille Day Paris, France 8x10 in.',
+      description: 'Bastille Day 11x14 in.',
       imageFile: 'art/bastille_day_2.jpg'
     },
     {
@@ -109,7 +109,7 @@ Item.find({}).remove()
       category: 'photography',
       price: 35.00,
       qty: 100,
-      description: 'Eiffel Tower, Paris, France 11x14 in.',
+      description: 'Eiffel Tower 11x14 in.',
       imageFile: 'art/eiffel_tower_close.jpg'
     },
     {

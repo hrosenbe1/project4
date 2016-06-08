@@ -1,7 +1,8 @@
 .show-item {
-  margin-left: 415px;
-  margin-top: 10px;
+  margin-left: 180px;
+  margin-top: 140px;
   transition: all .2s ease-in-out;
+  float: left;
 }
 
 .show-item:hover {
@@ -16,5 +17,7 @@
 
 .title {
   text-align: center;
-  margin-top: 90px;
+  margin-top: 200px;
+  float: right;
+  margin-right: 160px;
 }
