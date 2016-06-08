@@ -18,13 +18,13 @@
     position: relative;
 }
 .placeHolder {
-    width: 1273px;
+    width: 1158px;
     height: 550px;
     visibility: hidden;
 }
 .layer1, .layer2, .layer3, .layer4 {
     position: absolute;
-    width: 1273px;
+    width: 1158px;
     height: 550px;
     top: 0;
     left: 0;
@@ -79,7 +79,8 @@
 }
 
 .footer {
-  background-color: #EEEEEE;
+  /*background-color: #EEEEEE;*/
+  padding: 0px;
 }
 
 body .ng-scope {
@@ -107,5 +108,9 @@ body {
 .ng-scope .ng-isolate-scope {
   height: 475px;
   /*background-color: #000000;*/
+}
+
+.container {
+  height: 0px;
 }
 

@@ -36,3 +36,5 @@ angular.module('project4App')
       return $http.delete('/api/users/' + userId + '/cart/');
     };
   });
+
+

@@ -1,23 +1,21 @@
 <section class="detail">
   <header>
-    <h1> Product Detail</h1>
   <div class="panel">
-    <p> {{ vm.item.name }} </p>
-
+  <h2 class="title">{{vm.item.description}}</h2>
     <div class="col-md-4 item-image">
-    <img class="middle" src="/assets/images/{{vm.item.imageFile}}"/>
+    <img class="show-item itemimg" src="/assets/images/{{vm.item.imageFile}}"/>
     </div>
     <article>
       <table>
         <tr>
 
-          <td> Category </td>
+          <!-- <td> Category </td>
           <td> {{vm.item.category}} </td>
         <tr>
           <td> Quantity </td>
           <td class="quantitybutton"></td>
               <button class="decrease" ng-click="vm.decrease()">
-                <span class="icon-minus">
+                <span class="icon-minus"> -->
               <!-- input(ng-model="vm.cart.count" type='number')
               button.increase(ng-click="vm.increase()")
                 span.icon-plus

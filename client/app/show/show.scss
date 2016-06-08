@@ -1,27 +1,20 @@
-.detail {
-  input[type='submit'] {
-    font-size: .9em;
-    width: 50%;
-    &.warning {
-      width: 55%;
-    }
-    &.checkout {
-      width: 45%;
-    }
-  }
+.show-item {
+  margin-left: 415px;
+  margin-top: 10px;
+  transition: all .2s ease-in-out;
+}
 
-  img {
+.show-item:hover {
+  transform: scale(2.1);
+  position: absolute;
+  z-index:1;
+}
 
-    height: 300px;
-  }
+.panel {
+  height: 410px;
+}
 
-
-  article:last-child {
-
-    margin-top: 10px;
-  }
-
-  .quantitybutton {
-    float: left;
-  }
+.title {
+  text-align: center;
+  margin-top: 90px;
 }
