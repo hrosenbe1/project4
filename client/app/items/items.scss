@@ -1,4 +1,6 @@
 .cart {
+
+    float: right;
     padding: 10px;
     margin-top: 0px;
     ul {
@@ -149,9 +151,13 @@ section.container {
 }
 
 .cart-image {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .btn-sm {
     padding: 5px 0px;
+}
+
+.row {
+  margin-right: 60px;
 }
