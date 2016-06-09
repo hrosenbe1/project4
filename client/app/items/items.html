@@ -12,7 +12,7 @@
 
   <ul>
     <li class="cart animate-cart" ng-repeat="item in $ctrl.cart">
-      <span>{{ item.qty + ' x ' + item.item.name + ' = ' + ($ctrl.getCost(item) | currency) }}</span>
+      <span>{{ item.qty + ' x ' + item.item.title + ' = ' + ($ctrl.getCost(item) | currency) }}</span>
       <button class="btn btn-danger btn-xs" ng-click="$ctrl.removeItem(item)">Delete Item</button>
     </li>
   </ul>
