@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');
 import {Schema} from 'mongoose';
 import CartItem from '../cart/cartitem.model';
+import CartFine from '../cart/cartfine.model';
 
 var UserSchema = new Schema({
   name: String,

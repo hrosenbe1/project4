@@ -11,3 +11,4 @@ var CartItemSchema = new mongoose.Schema({
 });
 
 export default mongoose.model('CartItem', CartItemSchema);
+

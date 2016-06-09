@@ -6,6 +6,7 @@
 
 import {EventEmitter} from 'events';
 import CartItem from './cartitem.model';
+import CartFine from './cartfine.model';
 var CartEvents = new EventEmitter();
 
 // Set max event listeners (0 == unlimited)
@@ -21,6 +22,7 @@ var events = {
 for (var e in events) {
   var event = events[e];
   CartItem.schema.post(e, emitEvent(event));
+  CartFine.schema.post(e, emitEvent(event));
 }
 
 function emitEvent(event) {
