@@ -1,6 +1,6 @@
 .show-item {
-  margin-left: 180px;
-  margin-top: 140px;
+  margin-left: 60px;
+  margin-top: 70px;
   transition: all .2s ease-in-out;
   float: left;
 }
@@ -13,13 +13,42 @@
 
 .panel {
   height: 410px;
+  background: url(http://i4.istockimg.com/file_thumbview_approve/63752693/5/stock-illustration-63752693-abstract-geometric-pattern-dot-with-rhombuses-repeating-seamless-background-vector.jpg);
+  background-repeat: all;
 }
 
 .title {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
   float: right;
   margin-right: 160px;
 }
 
+.space {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid gray;
+  margin-left: 90px;
+  margin-top: 80px;
+}
+
+.description {
+  float: left;
+  height: 300px;
+  width: 480px;
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid gray;
+  margin-top: 130px;
+  margin-left: 100px;
+}
+
+.ptag {
+  text-align: center;
+  margin-top: 30px;
+  float: right;
+  margin-right: 160px;
+}
 

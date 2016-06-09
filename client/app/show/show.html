@@ -1,36 +1,16 @@
 <section class="detail">
-  <header>
-  <div class="panel">
-  <h2 class="title">{{vm.item.description}} print</h2>
-    <div class="col-md-4">
-    <img class="show-item itemimg" src="/assets/images/{{vm.item.imageFile}}"/>
-    </div>
+    <header>
+        <div class="panel">
+          <div class="description">
+            <h2 class="title">{{vm.item.description}} print</h2>
+            <p class="ptag">All photos are original by Heather Rosenberg</p>
+          </div>
+            <div class="col-md-4 space back">
+                <img class="show-item itemimg back" src="/assets/images/{{vm.item.imageFile}}" />
+            </div>
+        </div>
+    </header>
+</section>
 
-          <!-- <td> Category </td>
-          <td> {{vm.item.category}} </td>
-        <tr>
-          <td> Quantity </td>
-          <td class="quantitybutton"></td>
-              <button class="decrease" ng-click="vm.decrease()">
-                <span class="icon-minus"> -->
-              <!-- input(ng-model="vm.cart.count" type='number')
-              button.increase(ng-click="vm.increase()")
-                span.icon-plus
-        tr(ng-repeat="customattribute in vm.product.attribute")
-          td {{customattribute.name}}
-          td
-            select(ng-options="attributevalue as attributevalue.value for attributevalue in customattribute.values track by attributevalue._id" ng-model="vm.selected")
-              option(value="" disabled) Select One
-    article.footer
-      ul
-        li Price
-        li {{(vm.price + vm.selected.price) * vm.cart.count | currency}}
-      form(ng-submit="vm.addCart()" ng-show="!vm.isInCart(vm.product)")
-        input.addCart(type="submit" value="Add To Cart")
-      form(ng-submit="vm.removeFromCart()" ng-show="vm.isInCart(vm.product)")
-        input.warning(type="submit" value="Remove from Cart")
-        input.checkout(type="submit" value="Checkout?")
-    article
-      p Description
-      br
-      p {{vm.product.description}} -->
+
+

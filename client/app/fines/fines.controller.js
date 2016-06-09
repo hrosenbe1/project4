@@ -15,7 +15,7 @@ class FinesComponent {
     });
 
     // load inventory items from server
-    this.getInventory();
+    this.getArt();
   }
 
   find(cart, fine) {
@@ -57,9 +57,9 @@ class FinesComponent {
     }
   }
 
-  getInventory() {
+  getArt() {
     this.fineService.getFines().then((json) => {
-      this.inventory = json.data;
+      this.art = json.data;
     });
   }
 

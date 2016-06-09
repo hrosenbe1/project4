@@ -34,9 +34,9 @@ angular.module('project4App')
       return cartItem.qty * cartItem.item.price;
     };
 
-    that.getCost = function(cartFine) {
-      return cartFine.qty * cartFine.fine.price;
-    };
+    // that.getCost = function(cartFine) {
+    //   return cartFine.qty * cartFine.fine.price;
+    // };
 
     that.getTotal = function(cart) {
       var total = _.reduce(cart, function(sum, cartItem) {

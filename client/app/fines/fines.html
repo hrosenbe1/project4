@@ -17,13 +17,15 @@
 <section class="container items">
   <div class="list-group">
     <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 animate-inventory">
-           <!-- ng-repeat="fine in filteredFines = ( $ctrl.fine | fineFilter : $ctrl.searchText | orderBy: ['category', 'price'] )"> -->
+    <pre>ART: {{ $ctrl.art | json }}</pre>
+    <pre>LENGTH: {{ $ctrl.art.length }}</pre>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 animate-inventory"
+           ng-repeat="fine in filteredFines = ( $ctrl.art | fineFilter : $ctrl.searchText | orderBy: ['category', 'price'] ) track by $index">
         <a ng-click="$ctrl.goFine(fine)" class="list-group-item">
           <h3>{{ item.name }}</h3>
           <article class="row">
             <div class="col-xs-5">
-              <img class="middle itemimg" ng-src="/assets/images/{{fine.imageFile[0]}}"/>
+              <img class="middle itemimg" ng-src="/assets/images/{{fine.imageFile}}"/>
             </div>
             <div class="col-xs-7">
               <dl class="dl-horizontal">
