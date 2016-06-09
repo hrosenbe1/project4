@@ -49,8 +49,7 @@
 
 .layer1,
 .layer2,
-.layer3,
-.layer4 {
+.layer3 {
     position: absolute;
     width: 800px;
     height: 400px;
@@ -61,6 +60,7 @@
     margin-left: 170px;
     margin-top: 130px;
     border-radius: 10px;
+    border: 3px solid gray;
 }
 
 .layer1 {
@@ -135,4 +135,9 @@ body {
     color: gray;
     font-family: Dancing Script;
     margin-right: 30px;
+}
+
+body {
+  background: url(http://i4.istockimg.com/file_thumbview_approve/63752693/5/stock-illustration-63752693-abstract-geometric-pattern-dot-with-rhombuses-repeating-seamless-background-vector.jpg);
+  background-repeat: all;
 }

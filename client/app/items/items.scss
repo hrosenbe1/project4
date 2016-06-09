@@ -172,4 +172,35 @@ margin-left: 5px;
   font-size: 16px;
 }
 
+.list-group {
+  background-color: white;
+  border-radius: 10px;
+  padding-right: 80px;
+  padding-left: -20px;
+  border: 3px solid gray;
+  margin-left: 20px;
+}
+
+a.list-group-item {
+  padding: 2px;
+}
+
+.cart {
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid gray;
+  width: 600px;
+  margin-bottom: 10px;
+  margin-left: 270px;
+  margin-top: 10px;
+}
+
+.animate-cart {
+  margin-left: -40px;
+  border-radius: 0px;
+  border: 0px solid gray;
+  background-color: transparent;
+
+}
+
 
