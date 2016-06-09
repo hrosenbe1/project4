@@ -6,7 +6,8 @@
 'use strict';
 import Thing from '../api/thing/thing.model';
 import User from '../api/user/user.model';
-import Item from '../api/item/item.model';   // add this near the top of the file
+import Item from '../api/item/item.model';
+import Fine from '../api/fine/fine.model';
 
 Thing.find({}).remove()
   .then(() => {
@@ -143,6 +144,93 @@ Item.find({}).remove()
 })
 .then((items) => {
   console.log('Finished populating ' + items.length + ' items.');
+})
+.catch((err) => {
+  console.log('ERROR:', err);
+});
+
+Fine.find({}).remove()
+.then(() => {
+  return Fine.create(
+    {
+      title: 'Arc de Triumph',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Paris, France. 11x14 in.',
+      imageFile: 'art/arc_de_triumph_2.jpg'
+    },
+    {
+      title: 'Bastille Day',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Bastille Day 11x14 in.',
+      imageFile: 'art/bastille_day_1.jpg'
+    },
+    {
+      title: 'Saint Chapelle',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Saint Chapelle 11x14 in.',
+      imageFile: 'art/saint_chapelle_2.jpg'
+    },
+    {
+      title: 'Luxembourg Gardens',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Luxembourg Gardens 11x14 in.',
+      imageFile: 'art/luxembourg_gardens.jpg'
+    },
+    {
+      title: 'Bastille Day',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Bastille Day 11x14 in.',
+      imageFile: 'art/bastille_day_2.jpg'
+    },
+    {
+      title: 'Eiffel Tower',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Eiffel Tower 11x14 in.',
+      imageFile: 'art/eiffel_tower_close.jpg'
+    },
+    {
+      title: 'Turtle',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Turtle 11x14 in.',
+      imageFile: 'art/turtle.jpg'
+    },
+    {
+      title: 'Montmartre',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'Monmartre 11x14 in.',
+      imageFile: 'art/montmartre.jpg'
+    },
+    {
+      title: 'China River',
+      category: 'photography',
+      price: 35.00,
+      qty: 100,
+      description: 'River in China. 11x14 in.',
+      imageFile: 'art/beijing_china_lake.jpg'
+    }
+ )
+})
+.then(() => {
+  return Fine.find({});
+})
+.then((fines) => {
+  console.log('Finished populating ' + fines.length + ' items.');
 })
 .catch((err) => {
   console.log('ERROR:', err);
