@@ -106,6 +106,7 @@ body {
 // Component styles are injected through grunt
 /* inject:scss */
 @import 'admin/admin';
+@import 'fines/fines';
 @import 'items/items';
 @import 'main/main';
 @import 'show/show';
