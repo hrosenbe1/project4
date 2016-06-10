@@ -23,7 +23,7 @@ This app showcases the artwork of Heather Rosenberg and includes the opportunity
 
 ![](./Home_Page_P4_wireframe.png)
 ![](./Item_page_p4_wireframe.png)
-![](./Item_show_page_p4_wireframe.png)
+![](./item_show_page_p4_wireframe.png)
 
 ##Future Developments:
 
