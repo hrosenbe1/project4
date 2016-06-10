@@ -4,6 +4,8 @@
 
 This app showcases the artwork of Heather Rosenberg and includes the opportunity to purchase the art(checkout button is not functional at this point). There is a page for photography and a page for fine art. The photography page allows you to go to a show page for each piece where you are able to magnify the piece. The app comes with user athorization and authentication.
 
+![](./home_screenshot.png)
+
 ##Technologies Used:
 
 - Languages - HTML5, CSS3, Javascript, Angular Full-Stack Generator, Git, Github, Node.js and npm, Bower, Gulp, MongoDB, Express
