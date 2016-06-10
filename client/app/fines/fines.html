@@ -17,8 +17,6 @@
 <section class="container items">
   <div class="list-group">
     <div class="row">
-    <pre>ART: {{ $ctrl.art | json }}</pre>
-    <pre>LENGTH: {{ $ctrl.art.length }}</pre>
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 animate-inventory"
            ng-repeat="fine in filteredFines = ( $ctrl.art | fineFilter : $ctrl.searchText | orderBy: ['category', 'price'] ) track by $index">
         <a ng-click="$ctrl.goFine(fine)" class="list-group-item">

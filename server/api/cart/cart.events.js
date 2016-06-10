@@ -22,6 +22,10 @@ var events = {
 for (var e in events) {
   var event = events[e];
   CartItem.schema.post(e, emitEvent(event));
+}
+
+for (var e in events) {
+  var event = events[e];
   CartFine.schema.post(e, emitEvent(event));
 }
 

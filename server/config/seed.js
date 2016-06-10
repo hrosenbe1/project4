@@ -153,76 +153,76 @@ Fine.find({}).remove()
 .then(() => {
   return Fine.create(
     {
-      title: 'Arc de Triumph',
-      category: 'photography',
+      title: 'The Trumpet Player',
+      category: 'Fine Art',
       price: 35.00,
       qty: 100,
-      description: 'Paris, France. 11x14 in.',
-      imageFile: 'art/arc_de_triumph_2.jpg'
+      description: 'Mixed Media Print 11x14 in.',
+      imageFile: 'art/trumpet_player.jpg'
     },
     {
-      title: 'Bastille Day',
-      category: 'photography',
+      title: 'The Homeless Man',
+      category: 'Fine Art',
       price: 35.00,
       qty: 100,
-      description: 'Bastille Day 11x14 in.',
-      imageFile: 'art/bastille_day_1.jpg'
+      description: 'Mixed Media Print 11x14 in.',
+      imageFile: 'art/homeless_man.jpg'
     },
     {
-      title: 'Saint Chapelle',
-      category: 'photography',
+      title: 'The Pothead',
+      category: 'Fine Art',
       price: 35.00,
       qty: 100,
-      description: 'Saint Chapelle 11x14 in.',
-      imageFile: 'art/saint_chapelle_2.jpg'
+      description: 'Mixed Media Print 12x16 in.',
+      imageFile: 'art/pot_smoker.jpg'
     },
     {
-      title: 'Luxembourg Gardens',
-      category: 'photography',
+      title: 'The Fortune Teller',
+      category: 'Fine Art',
       price: 35.00,
       qty: 100,
-      description: 'Luxembourg Gardens 11x14 in.',
-      imageFile: 'art/luxembourg_gardens.jpg'
+      description: 'Mixed Media Print 11x14 in.',
+      imageFile: 'art/fortune_teller.jpg'
     },
     {
-      title: 'Bastille Day',
-      category: 'photography',
+      title: 'The Smoker',
+      category: 'Fine Art',
       price: 35.00,
       qty: 100,
-      description: 'Bastille Day 11x14 in.',
-      imageFile: 'art/bastille_day_2.jpg'
+      description: 'Mixed Media Print 11x14 in.',
+      imageFile: 'art/smoker.jpg'
     },
     {
-      title: 'Eiffel Tower',
-      category: 'photography',
+      title: 'Prague',
+      category: 'Fine Art',
       price: 35.00,
       qty: 100,
-      description: 'Eiffel Tower 11x14 in.',
-      imageFile: 'art/eiffel_tower_close.jpg'
+      description: 'Mixed Media Print 11x14 in.',
+      imageFile: 'art/prague.jpg'
     },
     {
-      title: 'Turtle',
-      category: 'photography',
+      title: 'Notre Dame',
+      category: 'Fine Art',
       price: 35.00,
       qty: 100,
-      description: 'Turtle 11x14 in.',
-      imageFile: 'art/turtle.jpg'
+      description: 'Notre Dame 11x14 in.',
+      imageFile: 'art/notre_dame.jpg'
     },
     {
-      title: 'Montmartre',
-      category: 'photography',
+      title: 'Jimi Hendrix',
+      category: 'Fine Art',
       price: 35.00,
       qty: 100,
-      description: 'Monmartre 11x14 in.',
-      imageFile: 'art/montmartre.jpg'
+      description: 'Mixed Media Print 11x14 in.',
+      imageFile: 'art/jimi_hendrix_leaf.jpg'
     },
     {
-      title: 'China River',
-      category: 'photography',
+      title: 'Sacre Coeur',
+      category: 'Fine Art',
       price: 35.00,
       qty: 100,
-      description: 'River in China. 11x14 in.',
-      imageFile: 'art/beijing_china_lake.jpg'
+      description: 'Screen Print 11x14 in.',
+      imageFile: 'art/sacre_coeur.jpg'
     }
  )
 })

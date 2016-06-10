@@ -1,32 +1,26 @@
-# project4
+#Artwork and Shop by Heather Rosenberg
 
-This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 3.7.5.
+## Overview:
 
-## Getting Started
+This app showcases the artwork of Heather Rosenberg and includes the opportunity to purchase the art(checkout button is not functional at this point). There is a page for photography and a page for fine art. The photography page allows you to go to a show page for each piece where you are able to magnify the piece. The app comes with user athorization and authentication.
 
-### Prerequisites
+## Project Notes
 
-- [Git](https://git-scm.com/)
-- [Node.js and npm](nodejs.org) Node ^4.2.3, npm ^2.14.7
-- [Bower](bower.io) (`npm install --global bower`)
-- [Ruby](https://www.ruby-lang.org) and then `gem install sass`
-- [Gulp](http://gulpjs.com/) (`npm install --global gulp`)
-- [MongoDB](https://www.mongodb.org/) - Keep a running daemon with `mongod`
+##Technologies Used:
 
-### Developing
+- Languages - HTML5, CSS3, Javascript, Angular Full-Stack Generator, Git, Github, Node.js and npm, Bower, Gulp, MongoDB, Express
+- Design - Google Fonts, Gliffy (wireframe), Adobe Photoshop
+- Project Planning & User Stories - [Trello](https://trello.com/b/Il9Z7qCh/project4)
 
-1. Run `npm install` to install server dependencies.
+##Wireframes:
 
-2. Run `bower install` to install front-end dependencies.
+![](./Home_Page_P4_wireframe.png)
+![](./Item_page_p4_wireframe.png)
+![](./Item_show_page_p4_wireframe.png)
 
-3. Run `mongod` in a separate shell to keep an instance of the MongoDB Daemon running
+##Future Developments:
 
-4. Run `gulp serve` to start the development server. It should automatically open the client in your browser when ready.
-
-## Build & development
-
-Run `grunt build` for building and `grunt serve` for preview.
-
-## Testing
-
-Running `npm test` will run the unit tests with karma.
+- Integrate Stripe API and Paypal
+- Push to Heroku
+- Add a show page from Fine Art main page
+- Add a comments section on the show pages
